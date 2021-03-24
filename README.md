@@ -1,8 +1,10 @@
 # PS_SQL
 SQL Practice 
-## Database for SoftQuery
+## Database for Models
 
- <p align="center">
+<p align="center">
+  <h2>softQuery and  JoinNGroup Database Model</h2>
   <img src="Images/SoftQueryDatabaseDiagram.png" title="hover text">
+  <h2>Banking Database Model</h2>
   <img src="Images/BankingDBModel.png" title="hover text">
 </p>
