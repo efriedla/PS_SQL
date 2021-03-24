@@ -1,4 +1,4 @@
 # PS_SQL
 SQL Practice 
 # # Database for SoftQuery
-![plot](Images/SoftQuery Database Diagram.png)
+![plot](SoftQuery Database Diagram.png)
