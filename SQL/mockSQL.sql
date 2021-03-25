@@ -70,3 +70,5 @@ JOIN ORDERS AS O
 ON S.STORE_ID = O.STORE_ID
 GROUP BY 1
 ORDER BY 2 DESC;
+
+-- https://replit.com/@efriedla/MockSQL#main.sql
