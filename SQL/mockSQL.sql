@@ -2,10 +2,11 @@ use mocksql
 
 
 -- 1. Create a query to return all orders made by users with the first name of “Marion”
-
-
 -- display names who made order that first name is martin
-
+SELECT ORDERS.ORDER_ID AS "ORDER NUMBER", USERS.FIRST_NAME AS "CUSTOMER FIRST NAME"
+FROM ORDERS
+JOIN USERS ON ORDERS.USER_ID = USERS.USER_ID
+WHERE USERS.FIRST_NAME = "Martion";
 
 
 -- 2. Create a query to select all users that have not made an order
