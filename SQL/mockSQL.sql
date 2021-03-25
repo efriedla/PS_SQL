@@ -63,7 +63,7 @@ CASE
     WHEN COUNT(O.STORE_ID) > 3 THEN "High"
     WHEN COUNT(O.STORE_ID) <= 3 AND COUNT(O.STORE_ID)> 1 THEN "Medium"
     WHEN COUNT(O.STORE_ID) <= 1 THEN "Low"
-    else "Error"
+    ELSE "Error"
 END AS "Sales Figure"
 FROM STORES AS S 
 JOIN ORDERS AS O
