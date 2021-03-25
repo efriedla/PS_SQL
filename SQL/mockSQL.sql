@@ -11,6 +11,12 @@ WHERE USERS.FIRST_NAME = "Martion";
 
 -- 2. Create a query to select all users that have not made an order
 
+SELECT U.USER_ID, U.FIRST_NAME, U.LAST_NAME, U.CITY
+FROM USERS AS U
+LEFT JOIN ORDERS AS O
+ON U.USERS = O.ORDER_ID
+WHERE O.ORDER_ID IS NULL;
+
 -- 3. Create a Query to select the names and prices of all items that have been part of 2 or more separate orders.
 
 -- 4. Create a query to return the Order Id, Item name, Item Price, and Quantity from orders made at stores in the city “New York”. Order by Order Id in ascending order.
