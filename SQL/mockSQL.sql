@@ -58,6 +58,15 @@ ORDER BY REVENUE DESC;
 		-- iii. If the store has been involved with 1 or less orders, mark as ‘Low’
 --		d. Should be ordered by the Order Quantity in Descending Order
 
---displays
---from
---by
+SELECT S.NAME, COUNT(O.STORE_ID) AS "Quantity",
+CASE 
+    WHEN COUNT(O.STORE_ID) > 3 THEN "High"
+    WHEN COUNT(O.STORE_ID) <= 3 AND COUNT(O.STORE_ID)> 1 THEN "Medium"
+    WHEN COUNT(O.STORE_ID) <= 1 THEN "Low"
+    else "Error"
+END AS "Sales Figure"
+FROM STORES AS S 
+JOIN ORDERS AS O
+ON S.STORE_ID = O.STORE_ID
+GROUP BY 1
+ORDER BY 2 DESC;
